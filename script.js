@@ -1,9 +1,11 @@
-function respond() {
-    event.preventDefault();
-    document.getElementById("response").style.display="block";
-    console.log("Responded!");
-}
+jQuery(function() {
+    console.log("Document ready.")
+    $("form#input_review").on('submit', get_prediction)
+})
 
-function reloadPage() {
-    location.reload();
+function get_prediction(e){
+    e.preventDefault()
+    console.log("Receiving review...")
+    var review = $("input#review").val()
+    console.log(review)
 }
