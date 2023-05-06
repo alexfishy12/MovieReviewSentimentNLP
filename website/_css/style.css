@@ -72,7 +72,7 @@ a {
     border-radius: 10px;
 }
 
-#submitbutton {
+button {
     position: relative;
     border-style: solid;
     background-color: black;
