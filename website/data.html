@@ -19,33 +19,38 @@
             <h1 id="title">
                 Sentiment Analysis
                 <img id="fordummies" src="https://fontmeme.com/permalink/230415/df19b9c0efba749f72a183ceaba8291f.png" alt="for-dummies-font" border="0">
-            </h1>                
+            </h1>  
+            <a href="index.html">Main Page</a>
             <a href="proposal.html">Our Proposal</a>
-            <a href="data.html">Raw Data</a>
         </header>
         <main>
             <img src="_assets/for-dummies.png" id="dummyguy">
-            <div class="start" style="margin-top:20vh">
-                <h2>
-                    Just recieved a movie review and have no clue if it's positive or negative?
-                </h2>
-                <h1>
-                    Type it below!
-                </h1>
-            </div>
-            <form id='input_review'>
-                <textarea type='text' id="review" placeholder="Type it Here!"></textarea>
-                <button type='submit' id="submitbutton">
-                    <h3>Submit</h3>
-                </button>
-            </form>
-            <div id="response">
-                Your review has been predicted to be <span id="prediction"></span>! <br>
-                <button id="retry">Click to retry!</button>
-            </div>
-            <div id="error">
-
-            </div>
+            <table id="csvTable">
+            </table>
+            <script>
+              // Replace the file name and path with your own CSV file
+              const csvFilePath = '_documents/IMDB_Dataset.csv';
+              const csvTable = document.getElementById('csvTable');
+              const xhttp = new XMLHttpRequest();
+              xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                  const csvData = this.responseText;
+                  const rows = csvData.split('\n');
+                  rows.forEach(row => {
+                    const cells = row.split(',');
+                    const tr = document.createElement('tr');
+                    cells.forEach(cell => {
+                      const td = document.createElement('td');
+                      td.textContent = cell.trim();
+                      tr.appendChild(td);
+                    });
+                    csvTable.appendChild(tr);
+                  });
+                }
+              };
+              xhttp.open('GET', csvFilePath, true);
+              xhttp.send();
+            </script>
         </main>
     </body>
 </html>
