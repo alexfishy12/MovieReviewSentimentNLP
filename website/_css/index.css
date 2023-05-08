@@ -1,0 +1,124 @@
+header {
+    background: black;
+    padding-top:2vh;
+    padding-bottom:2vh;
+}
+
+body {
+    background: yellow;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.yellow_text {
+    color: #ffff00;
+}
+
+.white_text {
+    color:white;
+}
+
+.title {
+    font-size:5vh;
+    margin-left:2.5vw;
+    font-style: italic;
+    font-weight:bolder;
+    padding-right:5vw;
+
+    display:grid;
+    width:65%;
+    grid-template-columns:50% 20%;
+}
+
+#for_dummies_text {
+    display:grid;
+    grid-template-columns:1vw 20vw;
+    place-items: center;
+    position:relative;
+    left:-3.5vw;
+}
+
+#for_text {
+    height:2vh;
+}
+
+#dummies_text {
+    height:5vh;
+}
+
+
+#about_link {
+    position:absolute;
+    right:5%;
+}
+
+#dummyguy {
+    position:fixed;
+    bottom:0%;
+    height:50%;
+    z-index:-5;
+}
+
+.content {
+    margin-top:5vh;
+    margin-left:20vw;
+    margin-right:20vw;
+    text-align:center;
+}
+
+.prompt {
+    font-size:2vw;
+    font-weight:bolder;
+    margin-top:5vh;
+    margin-left:10vw;
+    margin-right:10vw;
+    text-align:center;
+}
+
+form {
+    display:grid;
+    grid-template-columns:70% 30%;
+}
+
+button {
+    border-style: solid;
+    background-color: black;
+    color: white;
+    padding:5px;
+    font-size:3vh;
+    font-weight:bolder;
+}
+
+.form_button {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.retry_button {
+    border-radius: 10px;
+}
+
+form > textarea {
+    border-style: solid;
+    border-width: 5px;
+    border-color:black;
+    background-color: white;
+    color:black;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding:5px;
+    font-size:2vh;
+}
+
+#response {
+    margin-top:5vh;
+    font-size:2vw;
+}
+
+#error {
+    margin-top:5vh;
+    font-size:2vw;
+}
+
+span#prediction {
+    font-weight:bolder;
+}

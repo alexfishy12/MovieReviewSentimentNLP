@@ -1,0 +1,82 @@
+header {
+    background: black;
+    padding-top:2vh;
+    padding-bottom:2vh;
+}
+
+body {
+    background: yellow;
+}
+
+.yellow_text {
+    color: yellow;
+}
+
+.title {
+    font-size:5vh;
+    margin-left:2.5vw;
+}
+
+#for_dummies_text {
+    height:5vh;
+}
+
+#link {
+    position:absolute;
+    right:5%;
+}
+
+.content {
+    margin-top:5vh;
+    margin-left:20vw;
+    margin-right:20vw;
+    text-align:center;
+    font-size:5vh;
+}
+
+.prompt {
+    font-size:2vw;
+    font-weight:bolder;
+}
+
+form {
+    display:grid;
+    grid-template-columns:70% 30%;
+}
+
+button {
+    border-style: solid;
+    background-color: black;
+    color: white;
+    padding:5px;
+    font-size:2vw;
+    font-weight:bolder;
+}
+
+.form_button {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.retry_button {
+    border-radius: 10px;
+}
+
+form > textarea {
+    border-style: solid;
+    border-width: 5px;
+    border-color:black;
+    background-color: white;
+    color:black;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding:5px;
+    font-size:2vw;
+}
+
+object {
+    position:absolute;
+    left:10vw;
+    width:80vw;
+    height: 70%;
+}

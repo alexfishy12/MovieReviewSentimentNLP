@@ -18,7 +18,7 @@ function get_prediction(e){
     e.preventDefault()
     console.log("Receiving review...")
     var fd = new FormData();
-    var review_text = $("input#review").val()
+    var review_text = $("textarea#review").val()
     fd.append('review_text', review_text)
 
     console.log(review_text)
@@ -27,7 +27,23 @@ function get_prediction(e){
         console.log(response)
         if (response.response.predictions != undefined) {
             $("#error").hide()
-            $("span#prediction").html(response.response.predictions)
+
+            var prediction_label = response.response.predictions
+            var prediction_text = "undefined"
+            if (prediction_label == 0) {
+                $("span#prediction").css("color", "red")
+                prediction_text = "negative"
+            }
+            else if (prediction_label == 1) {
+                $("span#prediction").css("color", "green");
+                prediction_text = "positive"
+            }
+
+            var probabilities = response.response.probabilities
+            $("span#negative").html(probabilities.negative)
+            $("span#positive").html(probabilities.positive)
+
+            $("span#prediction").html(prediction_text)
             $("#response").show()
         }
         else {
@@ -55,6 +71,9 @@ function calculate_sentiment(fd) {
             error: function (XMLHttpRequest, textStatus, errorThrown) {
                 console.log('AJAX Error:' + textStatus);
                 resolve("Error " . textStatus);
+                $("#response").hide()
+                $("#error").html("Error loading a prediction.")
+                $("#error").show()
             }
         })
     });
