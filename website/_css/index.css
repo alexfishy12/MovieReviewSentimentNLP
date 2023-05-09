@@ -1,0 +1,118 @@
+header {
+    background: black;
+    padding-top:1vh;
+    padding-bottom:1vh;
+    width:100vw;
+}
+
+.header_content {
+    font-size:5vh;
+    padding-left:2.5vw;
+    padding-right:2.5vw;
+    font-style: italic;
+    font-weight:bolder;
+    width:100%;
+}
+
+
+#for_text {
+    height:2vh;
+    display:inline;
+}
+
+#dummies_text {
+    height:5vh;
+    display:inline;
+}
+
+
+#about_link {
+    position:absolute;
+    right:2.5vw;
+}
+
+.yellow_text {
+    color: #ffff00;
+}
+
+.white_text {
+    color:white;
+}
+
+body {
+    background: yellow;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+
+#dummyguy {
+    position:fixed;
+    bottom:0%;
+    height:50%;
+    z-index:-5;
+}
+
+.content {
+    margin-top:5vh;
+    margin-left:20vw;
+    margin-right:20vw;
+    text-align:center;
+}
+
+.prompt {
+    font-size:2vw;
+    font-weight:bolder;
+    margin-top:5vh;
+    margin-left:10vw;
+    margin-right:10vw;
+    text-align:center;
+}
+
+form {
+    display:grid;
+    grid-template-columns:70% 30%;
+}
+
+button {
+    border-style: solid;
+    background-color: black;
+    color: white;
+    padding:5px;
+    font-size:3vh;
+    font-weight:bolder;
+}
+
+.form_button {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.retry_button {
+    border-radius: 10px;
+}
+
+form > textarea {
+    border-style: solid;
+    border-width: 5px;
+    border-color:black;
+    background-color: white;
+    color:black;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding:5px;
+    font-size:2vh;
+}
+
+#response {
+    margin-top:5vh;
+    font-size:2vw;
+}
+
+#error {
+    margin-top:5vh;
+    font-size:2vw;
+}
+
+span#prediction {
+    font-weight:bolder;
+}
