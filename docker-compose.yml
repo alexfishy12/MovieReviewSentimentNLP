@@ -1,0 +1,14 @@
+version: "3.8"
+services:
+  web:
+    build:
+      context: ./web
+      dockerfile: Dockerfile
+    ports:
+      - ${PORT_WEB}:80
+  python:
+    build:
+      context: ./python
+      dockerfile: Dockerfile
+    ports:
+      - ${PORT_PYTHON}:3000
