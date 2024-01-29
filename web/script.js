@@ -58,7 +58,7 @@ function calculate_sentiment(fd) {
     console.log("Calculating sentiment...")
     return new Promise(function(resolve) {
         $.ajax({
-            url: '../cgi-bin/sentiment_analysis/RunFineTunedModel.py',
+            url: 'predict',
             type: 'POST',
             dataType: "json",
             processData: false,
