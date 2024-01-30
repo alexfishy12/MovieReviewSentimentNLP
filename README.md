@@ -4,20 +4,25 @@
 <summary>Table of Contents</summary>
   
 1. [Summary](#summary)
-2. [Features](#features)
-3. [Visuals](#visuals)
-4. [Technologies](#technologies)
-5. [What We Learned](#what-we-learned)
-6. [Setup and Installation](#setup-and-installation)
-7. [Usage](#usage)
-8. [Code Examples](#code-examples)
-9. [Contact](#contact)
-10. [Acknowledgments](#acknowledgments)
+2. [Documentation](#documentation)
+3. [Features](#features)
+4. [Visuals](#visuals)
+5. [Technologies](#technologies)
+6. [What We Learned](#what-we-learned)
+7. [Setup and Installation](#setup-and-installation)
+8. [Usage](#usage)
+9. [Code Examples](#code-examples)
+10. [Contact](#contact)
+11. [Acknowledgments](#acknowledgments)
 
 </details>
 
 ## Summary
 A simple webpage that is used to interface with a natural language processing machine learning model to predict sentiment analysis for the user-input movie review. 
+
+## Documentation
+- [Final Paper](web/_documents/Classifying_Movie_Reviews_with_Deep_Learning_Neural_Networks.pdf)
+- [Final Presentation](web/_documents/CPS5801_07.pdf)
 
 ## Features
 - **Natural Language Processing**: Uses a fine-tuned version of Google's BERT NLP model for sentiment analysis prediction.
@@ -27,6 +32,7 @@ A simple webpage that is used to interface with a natural language processing ma
 <p float="left">
   <img src="https://raw.githubusercontent.com/alexfishy12/MovieReviewSentimentNLP/main/web/_assets/webpagescreenshot.png" width="100%" />
 </p>
+
 
 ## Technologies
 - Front-end: HTML, CSS (with Bootstrap), Javascript
