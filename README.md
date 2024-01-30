@@ -25,7 +25,7 @@ A simple webpage that is used to interface with a natural language processing ma
 
 ## Visuals
 <p float="left">
-  <img src="https://raw.githubusercontent.com/alexfishy12/MovieReviewSentimentNLP/main/web/_assets/webpagescreenshot.png" width="500" />
+  <img src="https://raw.githubusercontent.com/alexfishy12/MovieReviewSentimentNLP/main/web/_assets/webpagescreenshot.png" width="100%" />
 </p>
 
 ## Technologies
